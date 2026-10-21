@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page &amp; Pour | Bookshop &amp; Café</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<header class="site-header">
+    <a href="#top" class="brand">Page &amp; Pour</a>
+    <button id="menu-btn" aria-label="Open menu" aria-expanded="false">Menu</button>
+    <nav id="nav" aria-label="Main">
+        <a href="#services">What we offer</a>
+        <a href="#menu">Café menu</a>
+        <a href="#visit">Visit</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main id="top">
+    <section class="hero">
+        <p class="eyebrow">Bookshop &amp; Café &middot; Bahrain</p>
+        <h1>Find your next favourite book over a good cup of coffee.</h1>
+        <p class="lead">A cozy corner for readers: new releases, second-hand treasures and a weekly book club.</p>
+        <div class="hero-actions">
+            <a class="btn" href="#menu">See the menu</a>
+            <a class="btn ghost" href="#visit">Plan a visit</a>
+        </div>
+        <p id="open-status" class="status" role="status"></p>
+    </section>
+
+    <section id="services" class="wrap">
+        <h2>What we offer</h2>
+        <div class="grid3">
+            <article class="card">
+                <div class="icon" aria-hidden="true">📖</div>
+                <h3>Books for everyone</h3>
+                <p>Fiction, non-fiction and a big children's corner, with staff picks on every shelf.</p>
+            </article>
+            <article class="card">
+                <div class="icon" aria-hidden="true">☕</div>
+                <h3>Café &amp; bakes</h3>
+                <p>Fresh coffee, loose-leaf tea and pastries baked every morning.</p>
+            </article>
+            <article class="card">
+                <div class="icon" aria-hidden="true">👥</div>
+                <h3>Weekly book club</h3>
+                <p>Join us every Thursday evening to talk about the month's pick. New readers always welcome.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="wrap">
+            <h2>Café menu</h2>
+            <div id="tabs" class="tabs" role="group" aria-label="Menu categories"></div>
+            <ul id="menu-list" class="menu-list"></ul>
+        </div>
+    </section>
+
+    <section id="visit" class="wrap two">
+        <div>
+            <h2>Opening hours</h2>
+            <table class="hours">
+                <tbody id="hours-body"></tbody>
+            </table>
+        </div>
+        <div class="quote">
+            <p>"The kind of shop where you go in for one book and leave three hours later with five."</p>
+            <p class="who">A happy customer</p>
+            <p class="addr">Road 1234, Block 567<br>Kingdom of Bahrain</p>
+        </div>
+    </section>
+
+    <section id="contact" class="join">
+        <div class="wrap narrow">
+            <h2>Say hello</h2>
+            <p>Questions, book requests or a group booking? Send us a note.</p>
+            <form id="contact-form" novalidate>
+                <label for="name">Name</label>
+                <input id="name" type="text">
+                <label for="email">Email</label>
+                <input id="email" type="email">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4"></textarea>
+                <button class="btn" type="submit">Send message</button>
+                <p id="form-msg" role="status"></p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Page &amp; Pour &copy; <span id="year"></span>. Fictional business created for a coding project.</p>
+</footer>
+
+<script src="dynamics.js"></script>
+</body>
+</html>
